@@ -39,7 +39,7 @@ export function Navbar() {
             <div className="flex items-center justify-between w-full px-4 py-3 md:py-8 md:flex-col md:justify-center gap-y-10 md:px-4 md:h-max bg-white/10 backdrop-blur-sm md:rounded-full">
                 {dataNavbar.map(({ name, path, icon }) => (
                     <div key={name}>
-                        <Link href={path} className={`${path === pathName && 'currentIconPage'} group transition-all duration-300`} style={{outline:'none' }}>
+                        <Link href={path} className={`${path === pathName && 'currentIconPage'} group transition-all duration-300 focus:outline-none`}>
                             <div className="absolute right-0 hidden mr-20 rounded-sm md:group-hover:flex md:group-hover:items-center">
                                 <div className="relative flex items-center p-2 leading-none text-black capitalize bg-white rounded-sm">
                                     {name}
